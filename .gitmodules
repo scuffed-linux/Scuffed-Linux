@@ -1,0 +1,6 @@
+[submodule "seshutils"]
+	path = seshutils
+	url = https://github.com/mine-man3000/seshutils
+[submodule "linux"]
+	path = linux
+	url = https://github.com/torvalds/linux
