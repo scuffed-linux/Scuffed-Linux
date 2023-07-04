@@ -1,5 +1,9 @@
 initramfs/bin/*
+initramfs/sbin/*
 out
 seshutils
 linux
 iso
+initramfs.cpio
+initramfs.cpio.zst
+scuffed-initrd.iso
