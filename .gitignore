@@ -1,5 +1,5 @@
 initramfs/bin/*
-initramfs/sbin/*
+initramfs/usr/sbin/*
 out
 seshutils
 linux
