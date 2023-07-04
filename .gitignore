@@ -1,0 +1,5 @@
+initramfs/bin/*
+out
+seshutils
+linux
+iso

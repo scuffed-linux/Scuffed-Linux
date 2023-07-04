@@ -1,0 +1,6 @@
+NAME="Scuffed Linux"
+PRETTY_NAME="Scuffed Linux"
+ID=scuffed
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+LOGO=scuffedlinux-logo

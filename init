@@ -1,0 +1,10 @@
+#!/bin/bash
+
+/bin/mount -t proc proc /proc
+/bin/mount -t sysfs sys /sys
+/bin/mount -t devtmpfs dev /dev
+/bin/mount -t tmpfs run /run
+
+clear
+
+/sbin/init
