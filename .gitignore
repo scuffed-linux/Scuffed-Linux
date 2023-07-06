@@ -1,4 +1,4 @@
-initramfs/bin/*
+initramfs/usr/bin/*
 initramfs/usr/sbin/*
 out
 seshutils
