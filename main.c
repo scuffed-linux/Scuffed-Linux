@@ -62,6 +62,6 @@ int main() {
 
     while (1)
     {
-        system("/bin/bash");
+        system("/bin/bash --login");
     }    
 }
