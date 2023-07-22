@@ -5,10 +5,10 @@
 /bin/mount -t devtmpfs dev /dev
 /bin/mount -t tmpfs run /run
 
-insmod /usr/lib/modules/6.4.4-arch1-1/kernel/drivers/input/serio/libps2.ko
-insmod /usr/lib/modules/6.4.4-arch1-1/kernel/drivers/input/serio/serio.ko
-insmod /usr/lib/modules/6.4.4-arch1-1/kernel/drivers/input/vivaldi-fmap.ko
-insmod /usr/lib/modules/6.4.4-arch1-1/kernel/drivers/input/keyboard/atkbd.ko 
+insmod /usr/lib/modules/*/kernel/drivers/input/serio/libps2.ko
+insmod /usr/lib/modules/*/kernel/drivers/input/serio/serio.ko
+insmod /usr/lib/modules/*/kernel/drivers/input/vivaldi-fmap.ko
+insmod /usr/lib/modules/*/kernel/drivers/input/keyboard/atkbd.ko 
 
 
 
