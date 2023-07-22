@@ -1,6 +1,3 @@
-[submodule "seshutils"]
-	path = seshutils
-	url = https://github.com/scuffed-linux/seshutils
-[submodule "linux"]
-	path = linux
-	url = https://github.com/torvalds/linux
+[submodule "ScuffedUtils"]
+	path = ScuffedUtils
+	url = https://github.com/scuffed-linux/ScuffedUtils

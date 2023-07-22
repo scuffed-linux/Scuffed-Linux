@@ -1,7 +1,11 @@
 initramfs/usr/bin/*
+!initramfs/usr/bin/.gitkeep
+!initramfs/usr/bin/bash
 initramfs/usr/sbin/*
+initramfs/usr/lib/modules/*
+!initramfs/lib/modules/.gitkeep
 out
-seshutils
+ScuffedUtils/*
 linux
 iso
 initramfs.cpio
