@@ -1,18 +1,16 @@
 #!/bin/bash
 
-/bin/mount -t devtmpfs dev /dev
-/bin/mount -t devpts devpts /dev/pts
-/bin/mount -t proc proc /proc
-/bin/mount -t sysfs sys /sys
-/bin/mount -t tmpfs run /run
+mount -t devtmpfs dev /dev
+mount -t devpts devpts /dev/pts
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t tmpfs run /run
 
 export uname=$(uname -r)
 
 insmod /usr/lib/modules/$uname/kernel/drivers/input/serio/libps2.ko
 insmod /usr/lib/modules/$uname/kernel/drivers/input/serio/serio.ko
 insmod /usr/lib/modules/$uname/kernel/drivers/input/vivaldi-fmap.ko
-insmod /usr/lib/modules/$uname/kernel/drivers/input/keyboard/atkbd.ko 
+insmod /usr/lib/modules/$uname/kernel/drivers/input/keyboard/atkbd.ko
 
-echo "HELLORLD"
-
-/bin/bash
+bash --login
