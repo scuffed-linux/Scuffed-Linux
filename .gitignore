@@ -13,3 +13,4 @@ initramfs.cpio.zst
 scuffed-initrd.iso
 bash
 kernel
+linux.tar.zstd
