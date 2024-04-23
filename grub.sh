@@ -12,5 +12,5 @@ ${grub}-mkstandalone -O x86_64-efi \
     -d /usr/lib/grub/x86_64-efi \
     --themes="" \
     --disable-shim-lock \
-    -o "iso/EFI/BOOT/BOOTx64.EFI" "iso/boot/grub/grub.cfg" > /dev/null
-${grub}-mkrescue -o scuffed-initrd.iso iso >> /dev/null
+    -o "iso/EFI/BOOT/BOOTx64.EFI" "iso/boot/grub/grub.cfg"
+${grub}-mkrescue -o scuffed-initrd.iso iso
