@@ -9,13 +9,8 @@ mkdir -p iso/EFI/BOOT
 
 ${grub}-mkstandalone -O x86_64-efi \
     --modules="efi_gop efi_uga video_bochs video_cirrus gfxterm gettext png" \
+    -d /usr/lib/grub/x86_64-efi \
     --themes="" \
     --disable-shim-lock \
-    -o "iso/EFI/BOOT/BOOTx64.EFI" "iso/boot/grub/grub.cfg"
-    
-${grub}-mkstandalone -O i386-efi \
-    --modules="efi_gop efi_uga video_bochs video_cirrus gfxterm gettext png" \
-    --themes="" \
-    --disable-shim-lock \
-    -o "iso/EFI/BOOT/BOOTIA32.EFI" "iso/boot/grub/grub.cfg"
-${grub}-mkrescue -o scuffed-initrd.iso iso
+    -o "iso/EFI/BOOT/BOOTx64.EFI" "iso/boot/grub/grub.cfg" > /dev/null
+${grub}-mkrescue -o scuffed-initrd.iso iso >> /dev/null

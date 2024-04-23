@@ -1,1 +1,3 @@
-for i in $(find . -name "*.ko.*"); do zstd -d $i; rm $i; done
+for i in $(find . -name "*.ko.*"); do 
+    zstd -dfq $i --rm; 
+done
